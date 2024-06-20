@@ -1,0 +1,19 @@
+name: VoteReward
+version: '${project.version}'
+main: net.nutchi.votereward.VoteReward
+api-version: '1.19'
+commands:
+  votereward:
+    aliases: [ vr ]
+  voterewardedit:
+    aliases: [ vre ]
+    usage: /<command> <month>
+    permission: votereward.edit
+  voterewardvote:
+    aliases: [ vrv ]
+    permission: votereward.vote
+permissions:
+  votereward.edit:
+    default: op
+  votereward.vote:
+    default: true
